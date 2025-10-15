@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐢 まっちゃAI 無限ニュースフィード 🌐</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        #app-container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto; 
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        h1 { 
+            text-align: center;
+            color: #00796b; 
+            border-bottom: 3px solid #00796b; 
+            padding-bottom: 10px; 
+            margin-bottom: 25px;
+        }
+        #status-message {
+            text-align: center;
+            color: #757575;
+            margin-bottom: 20px;
+        }
+        .article-item { 
+            margin-bottom: 25px; 
+            padding: 15px; 
+            border: 1px solid #e0e0e0; 
+            border-radius: 6px; 
+            background-color: #ffffff; 
+            transition: box-shadow 0.3s;
+        }
+        .article-link { 
+            font-size: 1.2em; 
+            color: #1a0dab; 
+            text-decoration: none; 
+            font-weight: bold; 
+            display: block; 
+            margin-bottom: 5px;
+        }
+        .article-date { 
+            font-size: 0.8em; 
+            color: #757575; 
+            display: block; 
+            margin-bottom: 10px;
+        }
+        .kame-button {
+            background-color: #4CAF50; 
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+        .summary {
+            margin-top: 15px;
+            padding: 10px;
+            border-left: 3px solid #00796b;
+            background-color: #e0f2f1; /* 薄い緑の背景 */
+            white-space: pre-wrap; /* 改行を有効にする */
+        }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div id="app-container">
+        <h1>📰 まっちゃAI ニュースフィード</h1>
+        
+        <p id="status-message">AI要約データを読み込み中... 🐢💨</p>
+        
+        <div id="news-container">
+            </div>
+    </div>
+
+    <script src="news-script.js"></script>
+</body>
+</html>
