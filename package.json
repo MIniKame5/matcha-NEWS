@@ -1,0 +1,12 @@
+{
+  "name": "ai-data-generator",
+  "version": "1.0.0",
+  "description": "Generate news summaries using Gemini API via GitHub Actions.",
+  "main": "generate_data.js",
+  "dependencies": {
+    "@google/genai": "^0.1.0",
+    "node-fetch": "^3.3.2",
+    "cheerio": "^1.0.0-rc.12",
+    "xml2js": "^0.6.2"
+  }
+}
